@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sendFlower</title>
 </head>
 <body>
     <script>
         // 刘杨宝 对象object 数据类型
         // 描述性很强的语言
         // 对象字面量
-        class Flower{
-
+        class Flower {
+            constructor(type,number){
+                this.type=type;
+                this.number=number;
+            }
         }
         const lyb={
             name: '刘杨宝',
@@ -28,7 +31,7 @@
                 let flower = new Flower('红玫瑰',11);
                 //把花送给她
                 //talk in js UML
-                receiver.receiveFlower(lyb,flower);
+                receiver.receiveFlower(lyb,flower,xm);
             }
             /*Symbol*/
             /*方法*/
@@ -36,8 +39,8 @@
 
         const xm={
             name: '小美',
-            receiveFlower:function(sender,flower){
-                console.log('收到了花');
+            receiveFlower:function(sender,flower,xm){
+                console.log(xm.name+'收到了'+sender.name+'送的'+flower.number+'朵'+flower.type);
             }
         };
 
@@ -46,11 +49,11 @@
             // 代理模式
             hometown: '赣州',
             //接口
-            receiveFlower:function(sender,flower){
+            receiveFlower:function(sender,flower,xm){
                 if(sender.name=='刘杨宝'){
                     // console.log('男神，还是让我们在一起吧');
-                    console.log('小红，请帮我转送给：')
-                    xm.receiveFlower(sender,flower);
+                    console.log('小红，请帮我把花儿转送给'+xm.name)
+                    xm.receiveFlower(sender,flower,xm);
                 }else{
                     console.log('收到了花');
                 }
