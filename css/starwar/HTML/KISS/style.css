@@ -1,5 +1,6 @@
 body{
-    background-color: #78e08f;
+    background-color: pink;
+    /* background-color: #78e08f; */
     margin: 0;
     /* position: relative; */
 }
@@ -34,7 +35,8 @@ body{
     width: 18px;
     height: 8px;
     border-radius: 50%;
-    background-color: #badc58;
+    background-color: pink;
+    /* background-color: #badc58; */
     position: absolute;
     right: -8px;
     top: 20px;
@@ -44,7 +46,8 @@ body{
     width: 18px;
     height: 8px;
     border-radius: 50%;
-    background-color: #badc58;
+    background-color: pink;
+    /* background-color: #badc58; */
     position: absolute;
     left: -5px;
     top: 20px;
