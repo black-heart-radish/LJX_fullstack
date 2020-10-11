@@ -3,10 +3,12 @@
 前端 后端 分离？
 
 传统
+
 1. database student
 2. 界面表现
 
 全栈的统一思考
+
 1. html5 里有什么属性可以做数据存储？ 前端老牛逼
 localStorage
 2. 最小化学习
@@ -19,6 +21,7 @@ localStorage
     快速做完？  ？  ？
 
 作业：
+
 1. 团队抱团，3-4 水果/武侠小说
 2. bilibili 账号 开通直播权限 直播写代码过程
     小黄书  你不知道的javascript
